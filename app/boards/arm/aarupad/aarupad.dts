@@ -78,6 +78,32 @@
 &gpio1 {
 	status = "okay";
 };
+
+// &i2c0 {
+//     compatible = "nordic,nrf-twi";
+//     status = "okay";
+//     sda-pin = <(32 + 9)>;
+//     scl-pin = <5>;
+//     // TODO: Zephyr 2.5
+//     // sda-gpios = <&gpio1 9 0>;
+//     // scl-gpios = <&gpio0 5 0>;
+
+//     fuel_gauge: max17055@36 {
+//         compatible = "maxim,max17055";
+//         label = "max17055";
+//         reg = <0x36>;
+
+//         // TODO: Zephyr 2.6
+//         // design-capacity = <1200>;
+//         design-voltage = <3700>;
+//         desired-voltage = <4200>;
+//         desired-charging-current = <400>;
+//         // i-chg-term = <30>;
+//         rsense-mohms = <5>;
+//         // v-empty = <3000>;
+//     };
+// };
+
 &usbd {
 	status = "okay";
 };
