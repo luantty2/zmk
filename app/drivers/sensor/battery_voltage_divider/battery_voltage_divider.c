@@ -54,8 +54,8 @@ static uint8_t lithium_ion_mv_to_pct(int16_t bat_mv) {
 
     // return bat_mv * 2 / 15 - 459;
     // return bat_mv / 15 - 179;
-    // return bat_mv / 17 - 147;    //2.5v
-    return bat_mv / 14-200;
+    return bat_mv / 17 - 147;    //2.5v
+    // return bat_mv / 14-200;
 }
 
 static int bvd_sample_fetch(const struct device *dev, enum sensor_channel chan) {
